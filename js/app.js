@@ -21,6 +21,14 @@ let SeattleShop = {
     getCustNumber : function(min,max){
     this.RandomSaleAmount=getRandomNumber(this.MinCust,this.MaxCust) *AvgCookieSale;
     }
+
+    Render : function(){
+
+        const h2Element =document.createElement('h2');
+        h2Element.textContent=this.location;
+        
+     
+    }
 }
 
 
