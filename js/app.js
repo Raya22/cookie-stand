@@ -32,6 +32,7 @@ let SeattleShop = {
       this.TotalSales += RandomSalesNumber;
 
     }
+
   },
 
 
@@ -58,6 +59,9 @@ let SeattleShop = {
 
 SeattleShop.DailySailesPerHour();
 SeattleShop.render();
+
+
+
 
 
 let TokyoShop = {
