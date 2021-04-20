@@ -144,27 +144,27 @@ let TokyoShop = {
       this.TotalSales += RandomSalesNumber;
 
     }
-},
+  },
 
-    render: function () {
-        let parentElement = document.getElementById('cookies');
-        let h2Element = document.createElement('h2');
-        h2Element.textContent = ('Tokyo');
-        parentElement.appendChild(h2Element);
-    
-        let list = document.createElement('ul');
-        parentElement.appendChild(list);
-    
-        for (let i = 0; i < Time.length; i++) {
-          let ListItem = document.createElement('li');
-          ListItem.textContent = Time[i] + ' : ' + this.SalesPerHour[i] + ' cookies';
-          list.appendChild(ListItem);
-        }
-    
-        let ListItem = document.createElement('li');
-        ListItem.textContent = 'Total ' + this.TotalSales;
-        list.appendChild(ListItem);
-      }
+  render: function () {
+    let parentElement = document.getElementById('cookies');
+    let h2Element = document.createElement('h2');
+    h2Element.textContent = ('Tokyo');
+    parentElement.appendChild(h2Element);
+
+    let list = document.createElement('ul');
+    parentElement.appendChild(list);
+
+    for (let i = 0; i < Time.length; i++) {
+      let ListItem = document.createElement('li');
+      ListItem.textContent = Time[i] + ' : ' + this.SalesPerHour[i] + ' cookies';
+      list.appendChild(ListItem);
+    }
+
+    let ListItem = document.createElement('li');
+    ListItem.textContent = 'Total ' + this.TotalSales;
+    list.appendChild(ListItem);
+  }
 
 };
 TokyoShop.DailySailesPerHour();
@@ -193,28 +193,28 @@ let DubaiShop = {
       this.TotalSales += RandomSalesNumber;
 
     }
-},
+  },
 
 
-    render: function () {
-        let parentElement = document.getElementById('cookies');
-        let h2Element = document.createElement('h2');
-        h2Element.textContent = ('Dubai');
-        parentElement.appendChild(h2Element);
-    
-        let list = document.createElement('ul');
-        parentElement.appendChild(list);
-    
-        for (let i = 0; i < Time.length; i++) {
-          let ListItem = document.createElement('li');
-          ListItem.textContent = Time[i] + ' : ' + this.SalesPerHour[i] + ' cookies';
-          list.appendChild(ListItem);
-        }
-    
-        let ListItem = document.createElement('li');
-        ListItem.textContent = 'Total ' + this.TotalSales;
-        list.appendChild(ListItem);
-      }
+  render: function () {
+    let parentElement = document.getElementById('cookies');
+    let h2Element = document.createElement('h2');
+    h2Element.textContent = ('Dubai');
+    parentElement.appendChild(h2Element);
+
+    let list = document.createElement('ul');
+    parentElement.appendChild(list);
+
+    for (let i = 0; i < Time.length; i++) {
+      let ListItem = document.createElement('li');
+      ListItem.textContent = Time[i] + ' : ' + this.SalesPerHour[i] + ' cookies';
+      list.appendChild(ListItem);
+    }
+
+    let ListItem = document.createElement('li');
+    ListItem.textContent = 'Total ' + this.TotalSales;
+    list.appendChild(ListItem);
+  }
 
 
 };
@@ -244,34 +244,34 @@ let ParisShop = {
       this.TotalSales += RandomSalesNumber;
 
     }
-},
+  },
 
 
-    render: function () {
-        let parentElement = document.getElementById('cookies');
-        let h2Element = document.createElement('h2');
-        h2Element.textContent = ('Paris');
-        parentElement.appendChild(h2Element);
-    
-        let list = document.createElement('ul');
-        parentElement.appendChild(list);
-    
-        for (let i = 0; i < Time.length; i++) {
-          let ListItem = document.createElement('li');
-          ListItem.textContent = Time[i] + ' : ' + this.SalesPerHour[i] + ' cookies';
-          list.appendChild(ListItem);
-        }
-    
-        let ListItem = document.createElement('li');
-        ListItem.textContent = 'Total ' + this.TotalSales;
-        list.appendChild(ListItem);
-      }
+  render: function () {
+    let parentElement = document.getElementById('cookies');
+    let h2Element = document.createElement('h2');
+    h2Element.textContent = ('Paris');
+    parentElement.appendChild(h2Element);
+
+    let list = document.createElement('ul');
+    parentElement.appendChild(list);
+
+    for (let i = 0; i < Time.length; i++) {
+      let ListItem = document.createElement('li');
+      ListItem.textContent = Time[i] + ' : ' + this.SalesPerHour[i] + ' cookies';
+      list.appendChild(ListItem);
+    }
+
+    let ListItem = document.createElement('li');
+    ListItem.textContent = 'Total ' + this.TotalSales;
+    list.appendChild(ListItem);
+  }
 
 
 };
 ParisShop.DailySailesPerHour();
 ParisShop.render();
- 
+
 
 let LimaShop = {
   location: 'Lima',
@@ -295,27 +295,27 @@ let LimaShop = {
       this.TotalSales += RandomSalesNumber;
 
     }
-},
+  },
 
-    render: function () {
-        let parentElement = document.getElementById('cookies');
-        let h2Element = document.createElement('h2');
-        h2Element.textContent = ('Lima');
-        parentElement.appendChild(h2Element);
-    
-        let list = document.createElement('ul');
-        parentElement.appendChild(list);
-    
-        for (let i = 0; i < Time.length; i++) {
-          let ListItem = document.createElement('li');
-          ListItem.textContent = Time[i] + ' : ' + this.SalesPerHour[i] + ' cookies';
-          list.appendChild(ListItem);
-        }
-    
-        let ListItem = document.createElement('li');
-        ListItem.textContent = 'Total ' + this.TotalSales;
-        list.appendChild(ListItem);
-      }
+  render: function () {
+    let parentElement = document.getElementById('cookies');
+    let h2Element = document.createElement('h2');
+    h2Element.textContent = ('Lima');
+    parentElement.appendChild(h2Element);
+
+    let list = document.createElement('ul');
+    parentElement.appendChild(list);
+
+    for (let i = 0; i < Time.length; i++) {
+      let ListItem = document.createElement('li');
+      ListItem.textContent = Time[i] + ' : ' + this.SalesPerHour[i] + ' cookies';
+      list.appendChild(ListItem);
+    }
+
+    let ListItem = document.createElement('li');
+    ListItem.textContent = 'Total ' + this.TotalSales;
+    list.appendChild(ListItem);
+  }
 
 
 };
