@@ -1,4 +1,8 @@
 
+table,th, td {
+    border: 1px solid black;
+    box-sizing:border-box;
+
 main section:nth-child(1)
 {
     display: grid;
