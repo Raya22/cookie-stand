@@ -180,3 +180,4 @@ let LimaShop =new Shop('Lima','2','16','4.6');
 LimaShop.DailySailesPerHour();
 LimaShop.render();
 footer();
+
