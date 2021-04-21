@@ -1,3 +1,53 @@
+
 table,th, td {
     border: 1px solid black;
     box-sizing:border-box;
+
+main section:nth-child(1)
+{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    gap: 30px;
+    align-items: center;
+
+}
+
+main section:nth-child(2)
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+  }
+  nav{
+      align-content: center;
+  }
+
+  header section a{
+    
+      background-color: rgb(63, 78, 78);
+      text-decoration: none;
+      color: white;
+      margin: 700px;
+  }
+  footer a{
+    background-color: rgb(63, 78, 78);
+    text-decoration: none;
+    color: white;
+  }
+
+  ul {
+      display: grid;
+      grid-template-columns: repeat(5,1 fr);
+      
+      background-color: rgb(235, 235, 194);
+  }
+
+  header h1{
+      text-align: center;
+  }
