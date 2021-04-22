@@ -1,6 +1,12 @@
 'use strict';
 
 
+
+
+const parentShop=document.getElementById('SalmonForm');
+
+
+
 let Time = [' 6am', ' 7am', ' 8am', ' 9am', ' 10am', ' 11am', ' 12pm', ' 1pm', ' 2pm', ' 3pm', ' 4pm', ' 5pm', ' 6pm', ' 7pm'];
 
 function getRandomNumber(min, max) {
@@ -8,6 +14,7 @@ function getRandomNumber(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
 
 
 
@@ -57,8 +64,6 @@ function heading()
   let th=document.createElement('th');
   thead.appendChild(th);
   th.textContent='location';
-  //let td1=document.createElement('td');
-  //th.appendChild(td1);
   for(let i=0; i<Time.length;i++){
     let th=document.createElement('th');
     thead.appendChild(th);
@@ -135,8 +140,6 @@ Shop.prototype.render= function ()
 
 
 
-
-// table();
 let SeattelShop=new Shop('Seattle','23','65','6.3');
 
 SeattelShop.DailySailesPerHour();
@@ -160,7 +163,21 @@ let LimaShop =new Shop('Lima','2','16','4.6');
 LimaShop.DailySailesPerHour();
 LimaShop.render();
 
-LimaShop.DailySailesPerHour();
-LimaShop.render();
+
 footer();
 
+
+parentShop.addEventListener('submit',add);
+
+function add(event){
+  event.preventDefault();
+  console.log(event.target.Location);
+  const Location =event.target.Location.value;
+  const MinCust =event.target.MinCust.value;
+  const MaxCust =event.target.MaxCust.value;
+  const AvgCookieSale =event.target.AvgCookieSale.value;
+  let newCity= new Shop(Location,MinCust,MaxCust,AvgCookieSale);
+ 
+  newCity.render();
+  newCity.DailySailesPerHour();
+}
