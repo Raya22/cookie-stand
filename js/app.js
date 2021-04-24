@@ -115,7 +115,7 @@ function footer()
 Shop.prototype.render= function ()
 {
 
-  console.log(parentElement);
+  // console.log(parentElement);
 
   let tableRow=document.createElement('tr');
   Table.appendChild(tableRow);
@@ -128,7 +128,7 @@ Shop.prototype.render= function ()
     let tableCol=document.createElement('td');
     tableCol.textContent=this.SalesPerHour[i];
     tableRow.appendChild(tableCol);
-    console.log(this.SalesPerHour);
+    // console.log(this.SalesPerHour);
   }
 
   let td1=document.createElement('td');
@@ -136,6 +136,31 @@ Shop.prototype.render= function ()
   td1.textContent=this.DailyTotalSales;
 
 };
+
+parentShop.addEventListener('submit',add);
+
+function add(event){
+  event.preventDefault();
+  // console.log(event.target.Location);
+  const Location =event.target.Location.value;
+  const MinCust =event.target.MinCust.value;
+  const MaxCust =event.target.MaxCust.value;
+  const AvgCookieSale =event.target.AvgCookieSale.value;
+  console.log(Location);
+  console.log(MinCust);
+  console.log(MaxCust);
+  console.log(AvgCookieSale);
+  let newCity= new Shop(Location,MinCust,MaxCust,AvgCookieSale);
+  let newline=Table.rows.length;
+  Table.deleteRow(newline-1);
+
+  newCity.DailySailesPerHour();
+  console.log(newCity.SalesPerHour);
+  newCity.render();
+  
+  footer();
+}
+
 
 
 
@@ -164,20 +189,6 @@ LimaShop.DailySailesPerHour();
 LimaShop.render();
 
 
+
+
 footer();
-
-
-parentShop.addEventListener('submit',add);
-
-function add(event){
-  event.preventDefault();
-  console.log(event.target.Location);
-  const Location =event.target.Location.value;
-  const MinCust =event.target.MinCust.value;
-  const MaxCust =event.target.MaxCust.value;
-  const AvgCookieSale =event.target.AvgCookieSale.value;
-  let newCity= new Shop(Location,MinCust,MaxCust,AvgCookieSale);
- 
-  newCity.render();
-  newCity.DailySailesPerHour();
-}
