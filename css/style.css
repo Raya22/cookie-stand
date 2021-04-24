@@ -69,3 +69,35 @@ fieldset legend{
 #SalmonForm button{
     background-color: orange;
 }
+tbody{
+    margin: auto;
+}
+
+main section:nth-child(1){
+    
+    display: ;
+}
+#homeTable{
+    border: 1px solid rgb(173, 13, 13);
+    box-sizing:border-box;
+    margin-left: 0;
+
+}
+body h1{
+    margin-left: 33%;
+    color: orangered;
+}
+body a{
+    margin-left: 45%;
+    background-color: rgb(216, 186, 175);
+    
+}
+a:hover{
+    background-color: peru;
+}
+
+nav p{
+    font-weight: 800;
+    font-style: inherit;
+    margin-left: 5%;
+}

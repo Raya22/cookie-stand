@@ -51,7 +51,7 @@ Shop.prototype.DailySailesPerHour=function () {
 
 
 let parentElement=document.getElementById('cookies');
-let Table = document.createElement('table');
+let Table= document.createElement('table');
 parentElement.appendChild(Table);
 
 
