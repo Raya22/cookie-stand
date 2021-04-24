@@ -2,6 +2,10 @@
 table,th, td {
     border: 1px solid black;
     box-sizing:border-box;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
 
 main section:nth-child(1)
 {
@@ -51,3 +55,17 @@ table, th, td {
   header h1{
       text-align: center;
   }
+#cookies tr:nth-child(1){
+    background-color: rgb(202, 140, 82);
+}
+
+fieldset{
+    background-color: rgb(231, 196, 167);
+    font-weight: 800;
+}
+fieldset legend{
+    background-color: orange;
+}
+#SalmonForm button{
+    background-color: orange;
+}
